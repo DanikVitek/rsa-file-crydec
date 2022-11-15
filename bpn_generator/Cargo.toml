@@ -1,0 +1,23 @@
+[package]
+name = "bpn_generator"
+version = "0.1.0"
+edition = "2021"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+rand = "0.8"
+num-traits = "0.2"
+rayon = "1.5"
+
+[dependencies.num-bigint]
+version = "0.4"
+features = ["std", "rand"]
+
+[dev-dependencies]
+bencher = "0.1"
+
+[[bench]]
+name = "math_bench"
+path = "benches/math_bench.rs"
+harness = false

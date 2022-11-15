@@ -1,0 +1,11 @@
+[workspace]
+
+members = [
+    "app",
+    "bpn_generator"
+]
+
+[profile.release]
+lto = true
+opt-level = 3
+codegen-units = 1

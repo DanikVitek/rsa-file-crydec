@@ -1,0 +1,20 @@
+[package]
+name = "rsa-file-codec"
+version = "0.1.0"
+edition = "2021"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+bpn_generator = { path="../bpn_generator" }
+inquire = "0.5"
+rayon = "1.5"
+num-traits = "0.2"
+num-bigint = "0.4"
+num-integer = "0.1"
+rand = "0.8"
+anyhow = "1.0"
+
+[dependencies.indicatif]
+version = "0.17"
+features = ["rayon"]
